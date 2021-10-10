@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical-8</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        /* margin-top: 100px; */
+      }
+      h1 {
+        color: black;
+        font-size: 40px;
+        text-align: center;
+        padding: 25px 0px;
+      }
+      #header {
+        background-color: gray;
+        height: 80px;
+        margin: 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 40px;
+        color: white;
+        position:sticky;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 1;
+      }
+      .header_list {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+      }
+      #banner {
+        /* background-color: lightblue; */
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        font-size: 40px;
+        color: white;
+        /* position:absolute; */
+      }
+      #banner img {
+        width: 100%;
+      }
+      #circle-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: inherit;
+      }
+      .circle {
+        /* background-color: goldenrod; */
+        margin: 10px auto;
+        border-radius: 50%;
+      }
+      .circle img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+      }
+      #about_us_container::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      #left-side {
+        width: 49%;
+        height: 550px;
+        background-color: gray;
+        float: left;
+        color: white;
+      }
+      #left-side strong {
+        font-size: 30px;
+        display: flex;
+        margin: 20px;
+      }
+      #left-side div {
+        font-size: 26px;
+        display: flex;
+        margin: 20px;
+      }
+      #right-side {
+        width: 49%;
+        height: 550px;
+        float: right;
+      }
+      .article {
+        height: 31%;
+        margin-bottom: 20px;
+        /* background-color: chocolate; */
+        font-size: 20px;
+        color: white;
+        display: flex;
+        /* overflow: hidden; */
+      }
+      .article h2 {
+        position: absolute;
+        color: black;
+        left: 70%;
+        /* top: 20px; */
+      }
+      .article img {
+        height: 100%;
+        width: 100%;
+      }
+      #container {
+        display: flex;
+        justify-content: center;
+      }
+      .box {
+        width: 300px;
+        height: 400px;
+        background-color: white;
+        text-align: justify;
+        padding: 10px;
+        margin: 20px;
+        margin-bottom: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+      }
+      .box img {
+        width: 100%;
+        height: 180px;
+        border-radius: 20px;
+      }
+      .mybutton {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: white;
+        font-family: Arial;
+        background-color: red;
+        padding: 10px 40px;
+        border-radius: 10px;
+      }
+      .mybutton:hover {
+        background-color: blue;
+      }
+      #footer {
+        background-color: plum;
+        height: 100px;
+        color: white;
+        /* align-items: center; */
+      }
+      
+      #footer div{
+        position: relative;
+        top:25%;
+        display: flex;
+        font-size: 22px;
+        justify-content: center;
+        /* position:absolute;
+        left: 50%; */
+      }
+      #footer a {
+        font-size: 14px;
+        /* text-align: center; */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul id="header">
+        <a href="#header"><li class="header_list">HOME</li></a>
+        <a href="#about_us_container"><li class="header_list">ABOUT US</li></a>
+        <a href="#team"><li class="header_list">TEAM</li></a>
+        <a href="#technology"><li class="header_list">TECHNOLOGIES</li></a>
+        <a href="#contacts"><li class="header_list">CONTACT</li></a>
+      </ul>
+      <div style="margin: 0px;">
+      <div id="banner">
+        <div style="position: absolute; margin: 10px 20px">PRACTICAL - 8</div>
+        <img src="./Images/i4.jpg" />
+      </div>
+      <div id="team">
+        <h1>Team Members</h1>
+      </div>
+      <div id="circle-container">
+        <div class="circle"><img src="./Images/a1.png" /></div>
+        <div class="circle"><img src="./Images/a3.png" /></div>
+        <div class="circle"><img src="./Images/a1.png" /></div>
+        <div class="circle"><img src="./Images/a3.png" /></div>
+      </div>
+      <div id="about_us_container">
+        <div>
+          <h1>About Us</h1>
+        </div>
+        <div id="left-side">
+          <strong>About Projects</strong>
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, a,
+            illo aperiam dignissimos doloribus voluptatem possimus nihil magni
+            praesentium porro, voluptates quasi tempore. Nam architecto fugit
+            provident possimus perferendis, suscipit ut optio molestiae. Maiores
+            rem vero aliquid impedit repellat esse debitis. Dicta autem porro
+            labore modi nemo nulla, itaque excepturi asperiores ab, esse
+            perspiciatis iste velit voluptas, corporis consequuntur dolores
+            facilis delectus doloribus iusto alias nam beatae aliquid vero? Ex
+            nihil, dignissimos veritatis perspiciatis nobis accusantium ullam
+            eaque sed eius earum in inventore expedita dolore necessitatibus
+            atque amet quia nam repudiandae. Vero assumenda rem magnam
+            consequatur mollitia quibusdam placeat pariatur.
+          </div>
+        </div>
+        <div id="right-side">
+          <div class="article" id="p1">
+            <div>
+              <h2 Project>Project-1</h2>
+            </div>
+            <img src="./Images/i1.jpg" />
+          </div>
+          <div class="article" id="p2">
+            <div>
+              <h2 Project>Project-2</h2>
+            </div>
+            <img src="./Images/i2.jpg" />
+          </div>
+          <div class="article" id="p3">
+            <div>
+              <h2 Project>Project-3</h2>
+            </div>
+            <img src="./Images/i3.jpg" />
+          </div>
+        </div>
+      </div>
+      <div id="technology">
+        <h1>Technology Used</h1>
+      </div>
+      <div id="container">
+        <div class="box">
+          <div class="image">
+            <img
+              src="./Images/html.jpg"
+              style="justify-content: center; padding: 10px"
+            />
+          </div>
+          <h3 style="text-align: center">Introduction to HTML</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            voluptate consequatur temporibus quae doloribus perferendis
+            cupiditate ipsa itaque fugit impedit rerum saepe ut, hic quis quos?
+            Ipsum laudantium aspernatur ex!
+          </p>
+          <div class="image" style="text-align: center">
+            <a href="./htmlintro.html" class="mybutton">Read More</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img
+              src="./Images/css.png"
+              style="justify-content: center; padding: 10px"
+            />
+          </div>
+          <h3 style="text-align: center">Introduction to CSS</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            voluptate consequatur temporibus quae doloribus perferendis
+            cupiditate ipsa itaque fugit impedit rerum saepe ut, hic quis quos?
+            Ipsum laudantium aspernatur ex!
+          </p>
+          <div class="image" style="text-align: center">
+            <a href="./cssintro.html" class="mybutton">Read More</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img
+              src="./Images/images.png"
+              style="justify-content: center; padding: 10px"
+            />
+          </div>
+          <h3 style="text-align: center">Introduction to JavaScript</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            voluptate consequatur temporibus quae doloribus perferendis
+            cupiditate ipsa itaque fugit impedit rerum saepe ut, hic quis quos?
+            Ipsum laudantium aspernatur ex!
+          </p>
+          <div class="image" style="text-align: center">
+            <a href="./javascriptintro.html" class="mybutton">Read More</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img
+              src="./Images/bs.png"
+              style="justify-content: center; padding: 10px"
+            />
+          </div>
+          <h3 style="text-align: center">Introduction to BootStrap</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            voluptate consequatur temporibus quae doloribus perferendis
+            cupiditate ipsa itaque fugit impedit rerum saepe ut, hic quis quos?
+            Ipsum laudantium aspernatur ex!
+          </p>
+          <div class="image" style="text-align: center">
+            <a href="./bootstrapintro.html" class="mybutton">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div id="contacts">
+        <h1>Contacts</h1>
+      </div>
+      <div id="footer">
+        <div>Website Template for Practical-8</div>
+        <div>
+          <a href="#banner">Back to top</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
