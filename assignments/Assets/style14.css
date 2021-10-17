@@ -1,0 +1,30 @@
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.container{
+    height:100vh;
+    background-color: bisque;
+}
+.container h1{
+    text-align: center;
+    padding: 20px;
+}
+.counter{
+    display: inline-flex;
+    /* background-color: aqua; */
+    width: 100%;
+    height: 40px;
+    /* margin-top: 20px; */
+    justify-content: center;
+}
+.count{
+    text-align: center;
+    margin: 10px;
+    /* background-color: beige; */
+    width: 100px;
+}
+.counter button{
+    width: 30px;
+    background-color:chocolate;
+}
